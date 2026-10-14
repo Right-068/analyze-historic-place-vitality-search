@@ -1,0 +1,20 @@
+{
+  "dataset_id": "historic-city-poi-bundle-1",
+  "city": "广州市",
+  "city_boundary": "city/广州市历史城区范围_shape.shp",
+  "layers": {
+    "core": "protection/历史文化街区核心保护范围.shp",
+    "control": "protection/历史文化街区建设控制地带.shp",
+    "coordination": "protection/历史文化街区环境协调区.shp"
+  },
+  "poi_file": "poi.csv",
+  "expected_districts": 23,
+  "excluded_districts": [
+    "新河浦",
+    "华侨新村",
+    "长洲岛"
+  ],
+  "name_field": "MC",
+  "coordinate_method": "supplied_approx_checked_gcj02_inverse",
+  "coordinate_note": "近似坐标不等同测绘坐标；边界附近对象单列待核实。"
+}

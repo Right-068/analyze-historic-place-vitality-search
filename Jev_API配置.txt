@@ -1,0 +1,6 @@
+# 本文件仅供本机使用。不要把真实密钥发到聊天、日志或共享目录。
+# 分享 Skill 前清空 API_KEY；本文件不进入发布哈希清单。
+# API_URL 填写完整推理接口地址；MODEL 填服务端实际模型 ID。
+API_URL=https://api.typesafe.ai/v1/systemone
+MODEL=jev-1.13.0
+API_KEY=

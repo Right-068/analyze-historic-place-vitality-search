@@ -1,0 +1,221 @@
+{
+  "files": [
+    {
+      "bytes": 5,
+      "original_filename": "广州市历史城区范围_shape.cpg",
+      "path": "city/广州市历史城区范围_shape.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "bytes": 431,
+      "original_filename": "广州市历史城区范围_shape.dbf",
+      "path": "city/广州市历史城区范围_shape.dbf",
+      "sha256": "9cbd1367053f3eb1e57b5eca15995eefbab89b265f56c73b653aeca41f9c0823"
+    },
+    {
+      "bytes": 176,
+      "original_filename": "广州市历史城区范围_shape.prj",
+      "path": "city/广州市历史城区范围_shape.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c"
+    },
+    {
+      "bytes": 4204,
+      "original_filename": "广州市历史城区范围_shape.shp",
+      "path": "city/广州市历史城区范围_shape.shp",
+      "sha256": "ebef2cbf4299f7d53609ce55513add0ad5500b0cc551174079da706cde19caf4"
+    },
+    {
+      "bytes": 108,
+      "original_filename": "广州市历史城区范围_shape.shx",
+      "path": "city/广州市历史城区范围_shape.shx",
+      "sha256": "8c25263fb900bd9268583766137e4e915991a0a8bcad4218ae3efc144a3c6fa9"
+    },
+    {
+      "bytes": 19930921,
+      "original_filename": "广州市历史城区范围_高德全类POI.csv",
+      "path": "poi.csv",
+      "sha256": "a35cdcde3492c85a09b221387603a533de962d15bb944a732530e4f0a9116a93"
+    },
+    {
+      "bytes": 5,
+      "original_filename": "历史文化街区建设控制地带.CPG",
+      "path": "protection/历史文化街区建设控制地带.CPG",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "bytes": 3328,
+      "original_filename": "历史文化街区建设控制地带.dbf",
+      "path": "protection/历史文化街区建设控制地带.dbf",
+      "sha256": "b527c01c37ef09d6140b0d2b84d2f21d4e09cbf52ed29f5bc35d47e0bd2d6144"
+    },
+    {
+      "bytes": 176,
+      "original_filename": "历史文化街区建设控制地带.prj",
+      "path": "protection/历史文化街区建设控制地带.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c"
+    },
+    {
+      "bytes": 404,
+      "original_filename": "历史文化街区建设控制地带.sbn",
+      "path": "protection/历史文化街区建设控制地带.sbn",
+      "sha256": "3db165ba8703aefe93b8cef5d828c044598f0324d412a23422ad772f067b8997"
+    },
+    {
+      "bytes": 140,
+      "original_filename": "历史文化街区建设控制地带.sbx",
+      "path": "protection/历史文化街区建设控制地带.sbx",
+      "sha256": "9a3f67878ed92c58be52cefb7a19f9be3954b6235b077b60b972d2e5e8b4f6ba"
+    },
+    {
+      "bytes": 31476,
+      "original_filename": "历史文化街区建设控制地带.shp",
+      "path": "protection/历史文化街区建设控制地带.shp",
+      "sha256": "fce5fc021d87d4771a380f1ee6eb73008c93ad5d5f0b4cc1780f4f7ee7984ff5"
+    },
+    {
+      "bytes": 5841,
+      "original_filename": "历史文化街区建设控制地带.shp.xml",
+      "path": "protection/历史文化街区建设控制地带.shp.xml",
+      "sha256": "105cf770cf253a5ac7e87c2c6f9ab5aa85de269b2c3ef6796c3266476a28ebaa"
+    },
+    {
+      "bytes": 308,
+      "original_filename": "历史文化街区建设控制地带.shx",
+      "path": "protection/历史文化街区建设控制地带.shx",
+      "sha256": "f694baa0fea0ab90a9a1958cbbaa385faea9878866219d901602702e4ee9bb24"
+    },
+    {
+      "bytes": 5,
+      "original_filename": "历史文化街区核心保护范围.cpg",
+      "path": "protection/历史文化街区核心保护范围.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "bytes": 3328,
+      "original_filename": "历史文化街区核心保护范围.dbf",
+      "path": "protection/历史文化街区核心保护范围.dbf",
+      "sha256": "5433d9fec29ec841731bc7f588949b96852b35eea36e82f61f0c07be1e28d145"
+    },
+    {
+      "bytes": 176,
+      "original_filename": "历史文化街区核心保护范围.prj",
+      "path": "protection/历史文化街区核心保护范围.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c"
+    },
+    {
+      "bytes": 404,
+      "original_filename": "历史文化街区核心保护范围.sbn",
+      "path": "protection/历史文化街区核心保护范围.sbn",
+      "sha256": "a05c9cfdf56499a360a760f985ecd7464c976668cd3b9b5d4ac6a923eb03bbf0"
+    },
+    {
+      "bytes": 140,
+      "original_filename": "历史文化街区核心保护范围.sbx",
+      "path": "protection/历史文化街区核心保护范围.sbx",
+      "sha256": "978365102724a45ca77795025f9d17c2e60c3f0dd9eea3bd24f80f8bfaf13e88"
+    },
+    {
+      "bytes": 27796,
+      "original_filename": "历史文化街区核心保护范围.shp",
+      "path": "protection/历史文化街区核心保护范围.shp",
+      "sha256": "6d13a57dbad9e1677245c5ff79577130414f1ec23e456e3c2712a62c2451adf5"
+    },
+    {
+      "bytes": 308,
+      "original_filename": "历史文化街区核心保护范围.shx",
+      "path": "protection/历史文化街区核心保护范围.shx",
+      "sha256": "6b5194c9fb1cab99f41fe28684e0c665f76b572317cb9cccb785550666b5d0c4"
+    },
+    {
+      "bytes": 5,
+      "original_filename": "历史文化街区环境协调区.CPG",
+      "path": "protection/历史文化街区环境协调区.CPG",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824"
+    },
+    {
+      "bytes": 419,
+      "original_filename": "历史文化街区环境协调区.dbf",
+      "path": "protection/历史文化街区环境协调区.dbf",
+      "sha256": "cd62c59136291a69d98eb42fd496bbffca585298325d75def5c27e25d6f01af9"
+    },
+    {
+      "bytes": 176,
+      "original_filename": "历史文化街区环境协调区.prj",
+      "path": "protection/历史文化街区环境协调区.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c"
+    },
+    {
+      "bytes": 172,
+      "original_filename": "历史文化街区环境协调区.sbn",
+      "path": "protection/历史文化街区环境协调区.sbn",
+      "sha256": "98f65cf6665611675423e2853a3cd49f290c85de5370487beb3afbd4e26e39e1"
+    },
+    {
+      "bytes": 124,
+      "original_filename": "历史文化街区环境协调区.sbx",
+      "path": "protection/历史文化街区环境协调区.sbx",
+      "sha256": "615b8751c2096037f516529aaa1611ba997ab30230d5d9e83901fdfbbecb5cfe"
+    },
+    {
+      "bytes": 6080,
+      "original_filename": "历史文化街区环境协调区.shp",
+      "path": "protection/历史文化街区环境协调区.shp",
+      "sha256": "617b0cede0ca50b962dc49b584f64a60090c303960ef7eb3b28ed5ae046c803a"
+    },
+    {
+      "bytes": 6150,
+      "original_filename": "历史文化街区环境协调区.shp.xml",
+      "path": "protection/历史文化街区环境协调区.shp.xml",
+      "sha256": "2fa08a4f98bc4a39552bbd76451f4a17c1cdd0d2a2b2e338b7d992910155eedf"
+    },
+    {
+      "bytes": 124,
+      "original_filename": "历史文化街区环境协调区.shx",
+      "path": "protection/历史文化街区环境协调区.shx",
+      "sha256": "b037c46b211e187eb9dda4a019287a0c58cdcfbcfd130817190e1237911e1bec"
+    }
+  ],
+  "poi_columns": [
+    "poi_id",
+    "name",
+    "type",
+    "typecode",
+    "longitude_gcj02",
+    "latitude_gcj02",
+    "longitude_cgcs2000_approx",
+    "latitude_cgcs2000_approx",
+    "province",
+    "city",
+    "district",
+    "address",
+    "pcode",
+    "citycode",
+    "adcode",
+    "parent_id",
+    "query_top_category_code",
+    "query_top_category_name",
+    "business_area",
+    "opentime_today",
+    "opentime_week",
+    "tel",
+    "tag",
+    "rating",
+    "cost",
+    "parking_type",
+    "alias",
+    "keytag",
+    "rectag",
+    "indoor_map",
+    "cpid",
+    "floor",
+    "truefloor",
+    "navi_poiid",
+    "entrance_location",
+    "gridcode",
+    "source",
+    "retrieved_at_utc"
+  ],
+  "poi_rows": 47542,
+  "policy": "Original complete data; derived selection is stored outside this bundle.",
+  "schema_version": "part01-data-1"
+}

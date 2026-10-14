@@ -1,0 +1,472 @@
+{
+  "name": "analyze-historic-place-vitality-part0403",
+  "version": "Part04.03-1.0.0",
+  "baseline": "analyze-historic-place-vitality Part04.02",
+  "entrypoint": "scripts/hpv.py",
+  "template_reference": "V1.4.10",
+  "scope": [
+    "preflight",
+    "spatial",
+    "entity-resolution",
+    "platform-expression-discovery",
+    "contextual-entity-relationships",
+    "jev-primary-host-fallback",
+    "raw-collection",
+    "export",
+    "integrity-verification"
+  ],
+  "excluded_capabilities": [
+    "comment-llm-coding",
+    "model-geometry-or-cultural-value-judgment",
+    "formal-scoring",
+    "cross-platform-aggregation",
+    "evaluation-report"
+  ],
+  "local_secret_file": {
+    "path": "Jev_API配置.txt",
+    "excluded_from_manifest": true,
+    "clear_before_sharing": true
+  },
+  "files": [
+    {
+      "path": ".gitignore",
+      "sha256": "e453680170c001f19a038e48627a237c5a85a174434d8225a91848c62c03a05f",
+      "bytes": 37
+    },
+    {
+      "path": "README.md",
+      "sha256": "d75d3e221dbbc251d5eb0033653cadf9ff470b911be4168fbdb9cb924db0b4c1",
+      "bytes": 8178
+    },
+    {
+      "path": "SKILL.md",
+      "sha256": "40698c75ffd83e51034a30fa39d531ab35245d0d382e98b4183e1cf3117fc30e",
+      "bytes": 10969
+    },
+    {
+      "path": "Start-Part04.03.ps1",
+      "sha256": "24559eeabb6c415b6caa63a475f1cfc6d57afb096639b0c941df743b72c14d53",
+      "bytes": 1522
+    },
+    {
+      "path": "agents/interface.yaml",
+      "sha256": "feec7649ad7a7ce3aad586b60cd18386450c0c68bb53a8d5be8b89ec6832380a",
+      "bytes": 1215
+    },
+    {
+      "path": "agents/openai.yaml",
+      "sha256": "8210ca0ea12d4230ae2aff2e66cdc84e4d6b9cd0998da91960f0798de18ac5e6",
+      "bytes": 699
+    },
+    {
+      "path": "assets/config.json",
+      "sha256": "1aa19a4a6f5a85cab49eb4b84dd400dbb1d2138ea177c5592169259a85555cfa",
+      "bytes": 934
+    },
+    {
+      "path": "assets/data/bundle-manifest.json",
+      "sha256": "807b2c3d69fa994ce464855800e8ec8c6f0150fc663f660ad0ec44ad2170fd07",
+      "bytes": 8166
+    },
+    {
+      "path": "assets/data/city/广州市历史城区范围_shape.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "bytes": 5
+    },
+    {
+      "path": "assets/data/city/广州市历史城区范围_shape.dbf",
+      "sha256": "9cbd1367053f3eb1e57b5eca15995eefbab89b265f56c73b653aeca41f9c0823",
+      "bytes": 431
+    },
+    {
+      "path": "assets/data/city/广州市历史城区范围_shape.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c",
+      "bytes": 176
+    },
+    {
+      "path": "assets/data/city/广州市历史城区范围_shape.shp",
+      "sha256": "ebef2cbf4299f7d53609ce55513add0ad5500b0cc551174079da706cde19caf4",
+      "bytes": 4204
+    },
+    {
+      "path": "assets/data/city/广州市历史城区范围_shape.shx",
+      "sha256": "8c25263fb900bd9268583766137e4e915991a0a8bcad4218ae3efc144a3c6fa9",
+      "bytes": 108
+    },
+    {
+      "path": "assets/data/poi.csv",
+      "sha256": "a35cdcde3492c85a09b221387603a533de962d15bb944a732530e4f0a9116a93",
+      "bytes": 19930921
+    },
+    {
+      "path": "assets/data/project.json",
+      "sha256": "793ec4aff1a1875f7a55797c7df8d2534b7b30e734a64dbdf69b948b3a0970f1",
+      "bytes": 684
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.CPG",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "bytes": 5
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.dbf",
+      "sha256": "b527c01c37ef09d6140b0d2b84d2f21d4e09cbf52ed29f5bc35d47e0bd2d6144",
+      "bytes": 3328
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c",
+      "bytes": 176
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.sbn",
+      "sha256": "3db165ba8703aefe93b8cef5d828c044598f0324d412a23422ad772f067b8997",
+      "bytes": 404
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.sbx",
+      "sha256": "9a3f67878ed92c58be52cefb7a19f9be3954b6235b077b60b972d2e5e8b4f6ba",
+      "bytes": 140
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.shp",
+      "sha256": "fce5fc021d87d4771a380f1ee6eb73008c93ad5d5f0b4cc1780f4f7ee7984ff5",
+      "bytes": 31476
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.shp.xml",
+      "sha256": "105cf770cf253a5ac7e87c2c6f9ab5aa85de269b2c3ef6796c3266476a28ebaa",
+      "bytes": 5841
+    },
+    {
+      "path": "assets/data/protection/历史文化街区建设控制地带.shx",
+      "sha256": "f694baa0fea0ab90a9a1958cbbaa385faea9878866219d901602702e4ee9bb24",
+      "bytes": 308
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.cpg",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "bytes": 5
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.dbf",
+      "sha256": "5433d9fec29ec841731bc7f588949b96852b35eea36e82f61f0c07be1e28d145",
+      "bytes": 3328
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c",
+      "bytes": 176
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.sbn",
+      "sha256": "a05c9cfdf56499a360a760f985ecd7464c976668cd3b9b5d4ac6a923eb03bbf0",
+      "bytes": 404
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.sbx",
+      "sha256": "978365102724a45ca77795025f9d17c2e60c3f0dd9eea3bd24f80f8bfaf13e88",
+      "bytes": 140
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.shp",
+      "sha256": "6d13a57dbad9e1677245c5ff79577130414f1ec23e456e3c2712a62c2451adf5",
+      "bytes": 27796
+    },
+    {
+      "path": "assets/data/protection/历史文化街区核心保护范围.shx",
+      "sha256": "6b5194c9fb1cab99f41fe28684e0c665f76b572317cb9cccb785550666b5d0c4",
+      "bytes": 308
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.CPG",
+      "sha256": "3ad3031f5503a4404af825262ee8232cc04d4ea6683d42c5dd0a2f2a27ac9824",
+      "bytes": 5
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.dbf",
+      "sha256": "cd62c59136291a69d98eb42fd496bbffca585298325d75def5c27e25d6f01af9",
+      "bytes": 419
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.prj",
+      "sha256": "b10dbe4d6d1de908d340f892c90b3d31a552630af3742bb515bfe1bd26124f2c",
+      "bytes": 176
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.sbn",
+      "sha256": "98f65cf6665611675423e2853a3cd49f290c85de5370487beb3afbd4e26e39e1",
+      "bytes": 172
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.sbx",
+      "sha256": "615b8751c2096037f516529aaa1611ba997ab30230d5d9e83901fdfbbecb5cfe",
+      "bytes": 124
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.shp",
+      "sha256": "617b0cede0ca50b962dc49b584f64a60090c303960ef7eb3b28ed5ae046c803a",
+      "bytes": 6080
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.shp.xml",
+      "sha256": "2fa08a4f98bc4a39552bbd76451f4a17c1cdd0d2a2b2e338b7d992910155eedf",
+      "bytes": 6150
+    },
+    {
+      "path": "assets/data/protection/历史文化街区环境协调区.shx",
+      "sha256": "b037c46b211e187eb9dda4a019287a0c58cdcfbcfd130817190e1237911e1bec",
+      "bytes": 124
+    },
+    {
+      "path": "assets/entity-relation-prompt.json",
+      "sha256": "711a479053fba554dff6dead1d5c65e2c687f8804ff3704afe546cc12c06e02b",
+      "bytes": 4030
+    },
+    {
+      "path": "assets/poi_filter_rules.json",
+      "sha256": "001bd406f5ba49604a79c73fa6cca82ecb11c4cb4dcd307881c7c53d20ada478",
+      "bytes": 1000
+    },
+    {
+      "path": "assets/templates/candidate-evidence-template.jsonl",
+      "sha256": "9a8bdf11ece87e877954c30e6e93146d9eaf96d5a8f1cd710bd71333049ce211",
+      "bytes": 751
+    },
+    {
+      "path": "assets/templates/candidate-source-template.jsonl",
+      "sha256": "8b0609ff422f689a933c594721ec7773f373047ecdab39e74241a969b8031e04",
+      "bytes": 470
+    },
+    {
+      "path": "assets/templates/canonical-evidence-ledger-template.csv",
+      "sha256": "a7067bd5a82009a2e3a5716bb8e865f76f47c7e43bb972ccfaf6b0984c79714b",
+      "bytes": 1787
+    },
+    {
+      "path": "assets/templates/canonical-source-ledger-template.csv",
+      "sha256": "b275eef16ff53ffa2af6d0231217ba25a022da1147ef39f1167bba615635ba58",
+      "bytes": 1248
+    },
+    {
+      "path": "assets/templates/evidence-ledger-template.csv",
+      "sha256": "d47e04388646d8c57f74a7ea7b1bde81112e7f03a15420c632c8cde478baeac1",
+      "bytes": 1483
+    },
+    {
+      "path": "assets/templates/execution-observation-template.jsonl",
+      "sha256": "a8a76159af220e2506b11a7d2686d235d13e2c924b263d27f7993ef0a50261dd",
+      "bytes": 686
+    },
+    {
+      "path": "assets/templates/limitations-template.csv",
+      "sha256": "4712dbe0b1689ef05ae0b14ab9be7afc2f8ad92edd2ba7b2481eb949b5e31e95",
+      "bytes": 54
+    },
+    {
+      "path": "assets/templates/platform-scores-template.json",
+      "sha256": "0ddcb0f5cfa8005f24d8afd0466836baac52ca7b75e9ed8f520dcdbc54b0eb7b",
+      "bytes": 19117
+    },
+    {
+      "path": "assets/templates/report-data-template.json",
+      "sha256": "447c84863a9dba17a95b41f19e7e9c12012a1aca16c2e26146e5344de7deae9d",
+      "bytes": 26975
+    },
+    {
+      "path": "assets/templates/report-narrative-template.json",
+      "sha256": "1b2e9972d1fbf469d0d76b7384798ff53151cfc482aa1cfff33244a0f0e56f10",
+      "bytes": 719
+    },
+    {
+      "path": "assets/templates/report-truth-template.json",
+      "sha256": "5e1ddc5261192b6ae76767d019677f5163de744c5b5649b6d25d6bb3744591b9",
+      "bytes": 360
+    },
+    {
+      "path": "assets/templates/search-log-template.csv",
+      "sha256": "fccc54b535fc7adc98990478c01e9d2b543f75fedc96dab670f40e44d339fd22",
+      "bytes": 922
+    },
+    {
+      "path": "assets/templates/source-capture-record-template.json",
+      "sha256": "8d6fceadea2420810abdec0c32fc0ab2d3155c825048a34880d9adb26e552348",
+      "bytes": 1911
+    },
+    {
+      "path": "assets/templates/source-ledger-template.csv",
+      "sha256": "e3ac25a168f7f5d9e3e8d123628cf5f16e5adb0b50d4bdd522c478d45a8d9ade",
+      "bytes": 1152
+    },
+    {
+      "path": "assets/templates/人工复核决定模板.csv",
+      "sha256": "aa9788eb391789a7dcc2de0955e237093f7b79813390b40e71cac92e6fcaa476",
+      "bytes": 228
+    },
+    {
+      "path": "assets/templates/人工复核变更台账模板.csv",
+      "sha256": "40dba07f72c9257117fd9aab1653717351d8fdbb302baac146f6938a9fd31fd7",
+      "bytes": 320
+    },
+    {
+      "path": "assets/templates/网络检索与量化编码_模板.xlsx",
+      "sha256": "cf7c6e8afff47a63acc341bbe01a331387979021134b2a90f775d57b4f70083a",
+      "bytes": 28989
+    },
+    {
+      "path": "assets/templates/非量化文本量化评价规则_模板.xlsx",
+      "sha256": "a80e396c086eb8c08e65d16f8947da2a3de6b1a321e6bb3c79904d1e29201127",
+      "bytes": 17270
+    },
+    {
+      "path": "evals/interrupt_capture.py",
+      "sha256": "daa5f150042987f4e3ff2654163ba7750ad80514e4d328d1843a300e737e8bdd",
+      "bytes": 733
+    },
+    {
+      "path": "evals/replay_saved_run.py",
+      "sha256": "1bf1a5e4d6f30c2f51ffb6da134b6c5f14eee72a4c4f1a37b374412f8b7a3f6a",
+      "bytes": 2856
+    },
+    {
+      "path": "evals/test_part01.py",
+      "sha256": "4a715abdd35a5278cf66e5ddb26b3385c6cb5d00082ae7042c75791f71f81287",
+      "bytes": 27890
+    },
+    {
+      "path": "evals/test_part02.py",
+      "sha256": "1432bf88446b4a2062bbdbcf4b8f43c0b80611d5e398c11fb1f229e47f162ebe",
+      "bytes": 13260
+    },
+    {
+      "path": "evals/test_part03.py",
+      "sha256": "28cf006cd2cee6f6ac3808055199317fa35aee2d2c0ff6bb0b1b0300698a2957",
+      "bytes": 13471
+    },
+    {
+      "path": "evals/test_part04.py",
+      "sha256": "afaa0f5c1875cc8c75386f33bb66968150131cfd0573e4f958b78fa8e9f9e30c",
+      "bytes": 17991
+    },
+    {
+      "path": "evals/test_part0401.py",
+      "sha256": "723ce43cebbcbe938a070b5f91c16df982d0b66e727a12d700887fe41449c71a",
+      "bytes": 13002
+    },
+    {
+      "path": "evals/test_part0402.py",
+      "sha256": "7d7f6177e9b208c9e6c9036975d2f842cd19f19c5f0f5933b4b5167375cab366",
+      "bytes": 13650
+    },
+    {
+      "path": "evals/test_part0403.py",
+      "sha256": "c8b9586789b486114d82f0be0b8b8fc0900f9232c87d9940a43406986af89309",
+      "bytes": 9973
+    },
+    {
+      "path": "references/data-dictionary.md",
+      "sha256": "40f8aa256a58d2cdec9cf3e0be154d2ebaae0df39255e007faa0b36e66bf6be5",
+      "bytes": 10535
+    },
+    {
+      "path": "references/entity-resolution.md",
+      "sha256": "76bf00cb0c3fb5d2ffc349a25929a528de271b1e7dd043f01ed248867dd51069",
+      "bytes": 10708
+    },
+    {
+      "path": "references/spatial-and-matching.md",
+      "sha256": "025b4bb1280fa6a67b35050720266ea06cc428fa28abfa0ff28a242892c17004",
+      "bytes": 6262
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "d9262206b6fba4a0c9356ec06416b37238845b6685d73bfe021b55f1785cf32f",
+      "bytes": 99
+    },
+    {
+      "path": "scripts/collect.py",
+      "sha256": "070a1caee76448e85100e306669bc452bded041dbd3ae8921ba08705d9f3d6a4",
+      "bytes": 10771
+    },
+    {
+      "path": "scripts/common.py",
+      "sha256": "434e401f7f18404b34bba43d3cd9b4a4b3e87a478b83b029f538b8c81d9e02dc",
+      "bytes": 4774
+    },
+    {
+      "path": "scripts/ctrip.py",
+      "sha256": "1ad5d92db133085ba581574519b2d67c8f668af96bb990ee64c78b56e31ed156",
+      "bytes": 6936
+    },
+    {
+      "path": "scripts/entity.py",
+      "sha256": "11c85035555f9c8186fbd464b1d5c4157274a118052cbbab25ba430eba045d24",
+      "bytes": 8207
+    },
+    {
+      "path": "scripts/entity_link.py",
+      "sha256": "2be359abc309a582ffae9e0c20321ce38236d543b8ade7234899a7cd0fad49cb",
+      "bytes": 10301
+    },
+    {
+      "path": "scripts/entity_names.py",
+      "sha256": "388fc314169186ce2a33d39d89744256136697a8d13954f27dea0ef40adf56e9",
+      "bytes": 2950
+    },
+    {
+      "path": "scripts/entity_relation.py",
+      "sha256": "0d9b22dff8f6e4fd2f3d5194d05ed20d3696ba1a87c9f1ebbcc1889853ad6890",
+      "bytes": 16408
+    },
+    {
+      "path": "scripts/export_data.py",
+      "sha256": "30d8df45978b94a5a4d07088adb31d7743719768d04ba9a6aafcf8b9c33e0084",
+      "bytes": 42185
+    },
+    {
+      "path": "scripts/hpv.py",
+      "sha256": "02a281164570b1236a3ae1556fe1ad1f457dcdbf1c4cd99223882f2fd0978783",
+      "bytes": 3161
+    },
+    {
+      "path": "scripts/jev_adapter.py",
+      "sha256": "07ac9f74fef9518fca54be3e7b73e7b85e2fc1256472984aa8ad79e316f609b3",
+      "bytes": 8510
+    },
+    {
+      "path": "scripts/llm_entity_match.py",
+      "sha256": "f3c1fe714054dae2355f404b83a1180eeb5da6a156dbe9dcf56f4abe1e8cf778",
+      "bytes": 9465
+    },
+    {
+      "path": "scripts/poi_filter.py",
+      "sha256": "9ceb9108e1688befae5f38b54201de0fead2558778c82128828f230aacca60aa",
+      "bytes": 4080
+    },
+    {
+      "path": "scripts/poi_match.py",
+      "sha256": "f9ddfd3d4c80b52d7c4cae2c121206063693bfaa9c0ed221e2d529cfa8067a85",
+      "bytes": 9156
+    },
+    {
+      "path": "scripts/preflight.py",
+      "sha256": "9357a21f10a5ff284ea6a1f72ccaccbb23adbbc5a3bbc5530f0ae921bc90fbc5",
+      "bytes": 12008
+    },
+    {
+      "path": "scripts/runner.py",
+      "sha256": "5ab4215e001d34c32ccd36453158fb040bd0e3334e2c9c2caa436b2fed409e2d",
+      "bytes": 11483
+    },
+    {
+      "path": "scripts/spatial.py",
+      "sha256": "2bb86ec368f05955c497f1717baad3af6590cbace8c0515646700ecdaa87096a",
+      "bytes": 11842
+    },
+    {
+      "path": "版本日志 Part04.03.txt",
+      "sha256": "d27b777244efac03a26295abcbf6131b0d645edec0cfb90ebcff668e591195bf",
+      "bytes": 4869
+    }
+  ]
+}
